@@ -13,8 +13,9 @@ import com.android.volley.toolbox.Volley;
  * Created by bryan_g8 on 22/05/16.
  */
 public class WebService {
-    public static String server="http://192.168.0.13:3000/api/v1/";
+    public static String server="http://192.168.56.1:3000/api/v1/";
     public static String autenticar=server+"login";
+    public static String registrar=server+"usuario";
     private static WebService mInstance;
     private RequestQueue mRequestQueue;
     private ImageLoader mImageLoader;

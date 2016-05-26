@@ -14,29 +14,31 @@
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
         android:ems="10"
-        android:id="@+id/editText"
+        android:id="@+id/txtNameSU"
         android:layout_marginTop="178dp"
         android:hint="Name"
         android:layout_alignParentTop="true"
-        android:layout_alignStart="@+id/editText2" />
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true" />
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:inputType="textEmailAddress"
         android:ems="10"
-        android:id="@+id/editText2"
-        android:layout_below="@+id/editText"
-        android:layout_centerHorizontal="true"
-        android:hint="E-mail" />
+        android:id="@+id/txtEmailSU"
+        android:layout_below="@+id/txtNameSU"
+        android:hint="E-mail"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/txtNameSU" />
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/editText3"
-        android:layout_below="@+id/editText2"
-        android:layout_alignStart="@+id/editText2"
-        android:layout_alignEnd="@+id/editText2"
+        android:id="@+id/txtUsernameSU"
+        android:layout_below="@+id/txtEmailSU"
+        android:layout_alignStart="@+id/txtEmailSU"
+        android:layout_alignEnd="@+id/txtEmailSU"
         android:hint="Username" />
 
     <EditText
@@ -44,29 +46,34 @@
         android:layout_height="wrap_content"
         android:inputType="textPassword"
         android:ems="10"
-        android:id="@+id/editText4"
-        android:layout_below="@+id/editText3"
-        android:layout_centerHorizontal="true"
-        android:hint="Password" />
+        android:id="@+id/txtPasswordSU"
+        android:layout_below="@+id/txtUsernameSU"
+        android:hint="Password"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/txtUsernameSU" />
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:inputType="textPassword"
         android:ems="10"
-        android:id="@+id/editText5"
-        android:layout_below="@+id/editText4"
-        android:layout_centerHorizontal="true"
-        android:hint="Confirm Password" />
+        android:id="@+id/txtConfirmPasswordSU"
+        android:layout_below="@+id/txtPasswordSU"
+        android:hint="Confirm Password"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/txtPasswordSU" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="SIGN UP"
-        android:id="@+id/btnSignUpR"
-        android:layout_below="@+id/editText5"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="44dp" />
+        android:id="@+id/btnSignUpSU"
+        android:layout_below="@+id/txtConfirmPasswordSU"
+        android:layout_marginTop="44dp"
+        android:layout_alignEnd="@+id/txtConfirmPasswordSU"
+        android:background="@color/colorPrimaryDark"
+        android:layout_alignParentStart="true"
+        android:textColor="#FFFFFF"/>
 
     <ImageView
         android:layout_width="150dp"
