@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.projects.bryan_g8.tourism.SignUp">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/txtNameSU"
+        android:layout_marginTop="178dp"
+        android:hint="Name"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/txtEmailSU"
+        android:layout_below="@+id/txtNameSU"
+        android:hint="E-mail"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/txtNameSU" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtUsernameSU"
+        android:layout_below="@+id/txtEmailSU"
+        android:layout_alignStart="@+id/txtEmailSU"
+        android:layout_alignEnd="@+id/txtEmailSU"
+        android:hint="Username" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/txtPasswordSU"
+        android:layout_below="@+id/txtUsernameSU"
+        android:hint="Password"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/txtUsernameSU" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/txtConfirmPasswordSU"
+        android:layout_below="@+id/txtPasswordSU"
+        android:hint="Confirm Password"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/txtPasswordSU" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SIGN UP"
+        android:id="@+id/btnSignUpSU"
+        android:layout_below="@+id/txtConfirmPasswordSU"
+        android:layout_marginTop="44dp"
+        android:layout_alignEnd="@+id/txtConfirmPasswordSU"
+        android:background="@color/colorPrimaryDark"
+        android:layout_alignParentStart="true"
+        android:textColor="#FFFFFF"/>
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/imageView2"
+        android:src="@drawable/maya_pyramid"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
