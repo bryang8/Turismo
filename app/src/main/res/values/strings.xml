@@ -1,9 +1,8 @@
 <resources>
-    <string name="app_name">Tourism</string>
-    <string name="nick">Nick</string>
-    <string name="password">Password</string>
+    <string name="app_name">Traveler 502</string>
+    <string name="nick"> Username</string>
+    <string name="password"> Password</string>
     <string name="a">Tourism</string>
-    <string name="title_activity_login">Login</string>
 
     <!-- Strings related to login -->
     <string name="prompt_email">Email</string>

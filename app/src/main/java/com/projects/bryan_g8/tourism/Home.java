@@ -1,5 +1,8 @@
 package com.projects.bryan_g8.tourism;
 
+import android.app.ProgressDialog;
+import android.content.ClipData;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -67,7 +70,13 @@ public class Home extends AppCompatActivity
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
+        if (id == R.id.btn_logout) {
+            final ProgressDialog progressDialog = new ProgressDialog(Home.this);
+            progressDialog.setIndeterminate(true);
+            progressDialog.setMessage("Closing Session...");
+            progressDialog.show();
+            startActivity(new Intent(Home.this,Login.class));
+            progressDialog.dismiss();
             return true;
         }
 

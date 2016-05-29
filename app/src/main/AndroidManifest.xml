@@ -7,13 +7,12 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
-        android:label="Tourism"
+        android:icon="@drawable/maya_pyramid"
+        android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".Login"
-            android:label="Login">
+            android:name=".Login">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -21,8 +20,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".SignUp"
-            android:label="Sign Up" />
+            android:name=".SignUp"/>
         <activity
             android:name=".Home"
             android:label="@string/app_name"
