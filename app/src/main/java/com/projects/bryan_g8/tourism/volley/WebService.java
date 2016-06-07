@@ -8,6 +8,7 @@ import com.android.volley.Request;
 import com.android.volley.RequestQueue;
 import com.android.volley.toolbox.ImageLoader;
 import com.android.volley.toolbox.Volley;
+import com.projects.bryan_g8.tourism.bean.Usuario;
 
 /**
  * Created by bryan_g8 on 22/05/16.
@@ -16,6 +17,7 @@ public class WebService {
     public static String server="http://192.168.56.1:3000/api/v1/";
     public static String autenticar=server+"login";
     public static String registrar=server+"usuario";
+    public static String departamentos=server+"departamento?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjb21wYW55Ijoia2luYWwiLCJpYXQiOjE0NjUwODk5MTB9.-Tsu8TL61NizwEO19PGjCT3hdskumN3Lk3QbXxsoZDc";
     private static WebService mInstance;
     private RequestQueue mRequestQueue;
     private ImageLoader mImageLoader;

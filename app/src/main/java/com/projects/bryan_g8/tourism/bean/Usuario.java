@@ -12,6 +12,16 @@ public class Usuario {
     private String token;
     private String exp;
 
+    private static Usuario currentUser;
+
+    public static Usuario getCurrentUser() {
+        return currentUser;
+    }
+
+    public static void setCurrentUser(Usuario currentUser) {
+        Usuario.currentUser = currentUser;
+    }
+
     public Usuario() {
     }
 

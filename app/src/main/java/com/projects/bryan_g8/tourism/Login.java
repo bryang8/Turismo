@@ -16,6 +16,7 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.projects.bryan_g8.tourism.bean.Usuario;
+import com.projects.bryan_g8.tourism.helpers.Objects;
 import com.projects.bryan_g8.tourism.volley.WebService;
 
 import org.json.JSONArray;
@@ -63,6 +64,7 @@ public class Login extends AppCompatActivity {
     }
 
     public void login(View v) {
+        final View view = v;
         Log.d(TAG, "Login");
 
         if (!validate()) {
@@ -99,6 +101,9 @@ public class Login extends AppCompatActivity {
                                 response.getString("token"),
                                 response.getString("exp")
                         );
+
+                        Usuario.setCurrentUser(userLogged);
+                        Objects.setDepartamentos(view);
                         startActivity(new Intent(Login.this,Home.class));
 
                     }else{

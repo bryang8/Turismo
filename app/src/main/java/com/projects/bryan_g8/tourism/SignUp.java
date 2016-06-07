@@ -15,6 +15,7 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.projects.bryan_g8.tourism.bean.Usuario;
+import com.projects.bryan_g8.tourism.helpers.Objects;
 import com.projects.bryan_g8.tourism.volley.WebService;
 
 
@@ -117,10 +118,6 @@ public class SignUp extends AppCompatActivity {
         );
         WebService.getInstance(v.getContext()).addToRequestQueue(request);
 
-        String name = _nameText.getText().toString();
-        String email = _emailText.getText().toString();
-        String password = _passwordText.getText().toString();
-
 
         new android.os.Handler().postDelayed(
                 new Runnable() {
@@ -164,10 +161,10 @@ public class SignUp extends AppCompatActivity {
         }
 
         if (username.isEmpty() || username.length() < 4) {
-            _nameText.setError("at least 4 characters");
+            _usernameText.setError("at least 4 characters");
             valid = false;
         } else {
-            _nameText.setError(null);
+            _usernameText.setError(null);
         }
 
         if (email.isEmpty() || !android.util.Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
@@ -184,7 +181,7 @@ public class SignUp extends AppCompatActivity {
             _passwordText.setError(null);
         }
 
-        if (confirmPassword.equals(password)) {
+        if (!confirmPassword.equals(password)) {
             _confirmPasswordText.setError("passwords no not match");
             valid = false;
         } else {
